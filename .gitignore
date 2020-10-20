@@ -1,3 +1,4 @@
 help/*
 .cache-Slo
 wsgi.py
+testSpotifyObject.py
