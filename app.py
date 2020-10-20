@@ -30,6 +30,7 @@ class Alarm:
         self.rightAlbum = input('Is the right album playing? y or n? ')
         if self.rightAlbum == 'y':
             self.pauseMusic()
+            print(f'You\'re Alarm will rise at {self.alarm_time}. Sleep well!')
             self.testSuccess = True
 
     def isAlarmTime(self):
