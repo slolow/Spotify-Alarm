@@ -1,6 +1,7 @@
 import os
 import sys
 import spotipy
+import time
 from json.decoder import JSONDecodeError
 from datetime import datetime
 
@@ -10,7 +11,7 @@ class Alarm:
         self.testSuccess = False
 
     def setAlarmTime(self):
-        self.alarm_time = input('Enter alarm time \'HH:MM\': ') + ':00'
+        self.alarm_time = input('Enter alarm time \'HH:MM\': ')
 
     def connectToSpotify(self, username, scope):
         try:
@@ -32,7 +33,7 @@ class Alarm:
             self.testSuccess = True
 
     def isAlarmTime(self):
-        self.current_time = datetime.now().strftime("%H:%M:%S")
+        self.current_time = datetime.now().strftime("%H:%M")
         if self.current_time == self.alarm_time:
             return True
 
@@ -78,6 +79,7 @@ while True:
 
 # check if it is alarm time
 while True:
+    time.sleep(30)
     if alarm.isAlarmTime():
         alarm.startMusic()
         break
