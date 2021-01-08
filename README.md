@@ -13,7 +13,7 @@ app.py:
         - set SPOTIPY_CLIENT_SECRET=Enter your CLient Secret here
         - set SPOTIPY_REDIRECT_URI=Enter your Redirect URL here
         - python app.py 'your Spotify username' 'the device name you want to play the music on'
-        - If Running this script the first you'll need to authorize Spotify and you'll be redirect to an URL copy that URL in the terminal command.
+        - If Running this script the first time you'll need to authorize Spotify and you'll be redirect to an URL copy that URL in the terminal command.
           This information will be saved in a file .cache-"your username" and will not be asked the next time.
 
 spotify-app.py:
