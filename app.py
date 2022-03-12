@@ -53,7 +53,7 @@ class Alarm:
         self.album = spotifyObject.current_user_playing_track()
         self.albumCover = self.album['item']['album']['images'][0]['url']
         webbrowser.open(self.albumCover)
-        
+
         # While Alarm is on display the time every minute
         while True:
             self.currentTime = datetime.now().strftime("%H:%M")
@@ -71,6 +71,7 @@ class Alarm:
             return False
         else:
             return True
+
 
 def getDiviceID(devices, diviceName):
     for device in devices:
@@ -98,8 +99,8 @@ if __name__ == '__main__':
     # search for an album as long as the user found the right one
     while True:
         # search for an album
-        searchQuery = input('Enter the album you\'re looking for: ' )
-        searchResults = spotifyObject.search(searchQuery,1,0,'album')
+        searchQuery = input('Enter the album you\'re looking for: ')
+        searchResults = spotifyObject.search(searchQuery, 1, 0, 'album')
         albumUri = searchResults['albums']['items'][-1]['uri']
 
         alarm.test(deviceID, albumUri)
