@@ -1,4 +1,6 @@
 help/*
+.env
+.cache
 .cache-Slo
 wsgi.py
 testSpotifyObject.py
