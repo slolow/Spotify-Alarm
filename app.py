@@ -5,6 +5,7 @@ import time
 import webbrowser
 from json.decoder import JSONDecodeError
 from datetime import datetime
+from settings import load_credentials
 
 
 class Alarm:
@@ -81,6 +82,7 @@ def getDiviceID(devices, diviceName):
 
 
 if __name__ == '__main__':
+    load_credentials()
     # Get the username and devicename from terminal
     username = sys.argv[1]
     deviceName = sys.argv[2]
