@@ -1,4 +1,5 @@
 help/*
+__pycache__/*
 .env
 .cache
 .cache-Slo
