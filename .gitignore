@@ -5,3 +5,4 @@ __pycache__/*
 .cache-Slo
 wsgi.py
 testSpotifyObject.py
+session.session
