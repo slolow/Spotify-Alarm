@@ -1,3 +1,6 @@
+"""This script sends your Top ten tracks of the month from your spotify account to your telegram account.
+For setup see: https://www.geeksforgeeks.org/send-message-to-telegram-user-using-python/"""
+
 import os
 import sys
 import spotipy
